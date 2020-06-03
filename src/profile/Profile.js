@@ -6,8 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {Container,Col,Row,ListGroup, ListGroupItem} from "react-bootstrap";
 
 const Profile = (props) => {
-  let handleName = () => alert("Hello Monsieur " + props.name);
-  return (
+return (
     <Container>
       <Row
         className="align-items-center"
@@ -48,7 +47,7 @@ const Profile = (props) => {
             </ListGroupItem>
           </ListGroup>
         </Col>
-        {handleName()}
+        {props.handleName()}
       </Row>
     </Container>
   );
